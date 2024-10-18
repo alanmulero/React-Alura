@@ -1,10 +1,10 @@
 // Criando uma const para receber a função.
-
+import './CampoTexto.css'
 const CampoTexto = () => {
     return(
-        <div>
+        <div className="campoTexto">
             <label>Nome</label>
-            <input  />
+            <input  placeholder="Digite o nome..."  />
         </div>
     )
 
