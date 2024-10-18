@@ -1,11 +1,14 @@
 .campoTexto{
-    margin: 24px 0;
+    margin: 28px 0;
     box-sizing: border-box;
+    display: flex;
     width: 100%;
-    background-color: #e8eeef;
+
+    border-radius: 16px;
+    background-color: #f3f4f5;
     font-size: 22px;
     padding: 22px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.21);
 
 
 }
@@ -14,6 +17,7 @@
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
+    margin-right: 10px;
     font-size: 22px;
 }
 
