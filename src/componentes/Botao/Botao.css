@@ -1,0 +1,9 @@
+.botao {
+	display: inline-block;
+	background-color: #696969;
+	border-radius: 10px;
+	color: whitesmoke;
+	border:  none;
+	padding: 0.9em;
+	box-shadow: 10px 15px 25px #696969 ;
+}
