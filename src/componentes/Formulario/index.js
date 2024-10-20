@@ -15,7 +15,9 @@ const Formulario = () => {
                 <CampoTexto label={"Empresa"} placeholder={"Digite o nome da empresa"}/>
                 <CampoTexto label={"Atividade"} placeholder={"Digite o ramo de atividade da empresa"}/>
                 <ListaSuspensa label={'Selecione o continente:'} itens={paises}/>
-                <Botao  texto="Criar Card"/>
+                <Botao>
+                    Criar Card
+                </Botao>
             </form>
 
 
