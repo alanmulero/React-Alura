@@ -1,0 +1,26 @@
+select{
+
+    margin: 28px 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    background-color: #f3f4f5;
+    font-size: 22px;
+    padding: 22px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.21);
+    }
+
+
+
+
+.lista{
+
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    font-size: 22px;
+    color: #6e6a6a;
+
+}

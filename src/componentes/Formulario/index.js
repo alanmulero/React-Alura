@@ -1,7 +1,9 @@
 import './Formulario.css'
 import CampoTexto from "../CampoTexto";
+import ListaSuspensa from "../ListaSuspensa";
 
 const Formulario = () => {
+    const paises = ['África','América do Norte','América do Sul','Ásia','Oceania']
     return (
         <section className="formulario">
 
@@ -11,7 +13,7 @@ const Formulario = () => {
                 <CampoTexto label={"Cargo"} placeholder={"Digite o seu cargo"}/>
                 <CampoTexto label={"Empresa"} placeholder={"Digite o nome da empresa"}/>
                 <CampoTexto label={"Atividade"} placeholder={"Digite o ramo de atividade da empresa"}/>
-
+                <ListaSuspensa label={'Selecione o continente:'} itens={paises}/>
 
             </form>
 
