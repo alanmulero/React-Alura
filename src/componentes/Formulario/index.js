@@ -4,7 +4,7 @@ import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 import { useState } from 'react';
 
-const Formulario = () => {
+const Formulario = (props) => {
     const paises = ['África', 'América do Norte', 'América do Sul', 'Ásia', 'Oceania']
 
     const [nome, setNome] = useState('');
@@ -22,7 +22,14 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();// Alterando comportamento padrão.
-        console.log('Formulario submetido com os valores:', nome, cargo, empresa, atividade, continente);
+        // Avaixo, forma compacta de escrever um Object.
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            empresa,
+            atividade,
+            continente
+        }) 
     }
 
 
