@@ -48,7 +48,7 @@ function App() {
         <div className="App">
             <Banner/>
             {/*Funçao para capturar colaborador. colaborador passa adiante para colaboradoAdicionado  */}
-            <Formulario aoColaboradorCadastrado={item => colaboradorAdicionado(item)}/>
+            <Formulario continentes={continentes.map(item => item.nome)} aoColaboradorCadastrado={item => colaboradorAdicionado(item)}/>
 
             {continentes.map(item => <Colaboradores key={item.nome} nome={item.nome} corPrimaria={item.corPrimaria} corSecundaria={item.corSecundaria}/>)}
 

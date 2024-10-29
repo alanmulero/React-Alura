@@ -5,7 +5,7 @@ import Botao from "../Botao";
 import { useState } from 'react';
 
 const Formulario = (props) => {
-    const paises = ['África', 'América do Norte', 'América do Sul', 'Ásia', 'Oceania']
+
 
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
@@ -63,7 +63,7 @@ const Formulario = (props) => {
                     placeholder={"Digite o ramo de atividade da empresa"} />
 
 
-                <ListaSuspensa label={'Selecione o continente:'} itens={paises} valor={continente}
+                <ListaSuspensa label={'Selecione o continente:'} itens={props.continentes} valor={continente}
                 quandoDigitado={valor => setContinente(valor)} />
                 <Botao>
                     Criar Card
